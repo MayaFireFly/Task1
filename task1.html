@@ -42,7 +42,7 @@
                 function add(){
                     var one = document.getElementById("number_one").value || 0.1;
                     var two = document.getElementById("number_two").value || 0.2;
-                    var sum = (Number(one) + Number(two)).toFixed(1);
+                    var sum = ((Number(one) * 100) + (Number(two) * 100))/100;
                     alert("Результат:\n\n" + sum);
                 }
             </script>
